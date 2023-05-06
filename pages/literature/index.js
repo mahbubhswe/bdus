@@ -3,8 +3,8 @@ import Layout from "@/components/Layout";
 import ReadFromFirebase from "@/components/ReadFromFirebase";
 export default function Index() {
   return (
-    <Layout pageTitle={"Recent Post"}>
-      <ReadFromFirebase category={""} />
+    <Layout pageTitle={"সাহিত্য"}>
+      <ReadFromFirebase category={"সাহিত্য"} />
     </Layout>
   );
 }
