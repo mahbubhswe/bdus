@@ -10,12 +10,17 @@ export default function FindOnSocilaMedia() {
       </Typography>
       <Stack direction={"row"}>
         <IconButton
+          sx={{ color: "#EC1B24" }}
           href="https://web.facebook.com/udichibd/?_rdc=1&_rdr"
           component="a"
         >
           <Facebook />
         </IconButton>
-        <IconButton href="https://www.youtube.com/@UdichiBD" component="a">
+        <IconButton
+          sx={{ color: "#EC1B24" }}
+          href="https://www.youtube.com/@UdichiBD"
+          component="a"
+        >
           <YouTube />
         </IconButton>
       </Stack>

@@ -10,16 +10,19 @@ export default function Footer() {
         direction={{ xs: "column", sm: "row", md: "row" }}
         alignItems="center"
         spacing={2}
-        sx={{  p: "25px" }}
+        sx={{ p: "25px" }}
         justifyContent={"space-around"}
       >
-        <Image
-          src="/poster500.gif"
-          height={250}
-          width={400}
-          quality={100}
-          alt="Poster"
-        />
+        <Typography sx={{ px: "10px" }}>
+          <Image
+            src="/poster500.gif"
+            height={250}
+            width={400}
+            quality={100}
+            alt="Poster"
+          />
+        </Typography>
+
         <div>
           <ContactUS />
           <FindOnSocilaMedia />

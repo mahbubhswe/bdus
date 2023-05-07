@@ -10,13 +10,25 @@ export default function ContactUS() {
         CONTACT US
       </Typography>
       <Stack direction={"row"}>
-        <IconButton href="tel:+88029582054" component="a">
+        <IconButton
+          sx={{ color: "#EC1B24" }}
+          href="tel:+88029582054"
+          component="a"
+        >
           <CallIcon />
         </IconButton>
-        <IconButton href="mailto:udichi.bangladesh@gmail.com" component="a">
+        <IconButton
+          sx={{ color: "#EC1B24" }}
+          href="mailto:udichi.bangladesh@gmail.com"
+          component="a"
+        >
           <EmailIcon />
         </IconButton>
-        <IconButton href="https://goo.gl/maps/ZYSZkaBEB4soX3ha8" component="a">
+        <IconButton
+          sx={{ color: "#EC1B24" }}
+          href="https://goo.gl/maps/ZYSZkaBEB4soX3ha8"
+          component="a"
+        >
           <MapIcon />
         </IconButton>
       </Stack>

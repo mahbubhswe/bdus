@@ -12,6 +12,7 @@ import SideBar from "./SideBar";
 import Cancel from "@mui/icons-material/Cancel";
 import React from "react";
 import MenuIcon from "@mui/icons-material/Menu";
+import HomeIcon from "@mui/icons-material/Home";
 import Banner from "./Banner";
 import { useState } from "react";
 import { useRouter } from "next/router";
@@ -32,13 +33,15 @@ export default function Navbar() {
       >
         <Banner />
         <Paper elevation={10}>
-          <Toolbar sx={{ py: "18px" }}>
+          <Toolbar>
+            <IconButton onClick={() => router.push("/")}>
+              <HomeIcon sx={{ color: "#EC1B24" }} />
+            </IconButton>
             <Stack
               sx={{ display: { xs: "none", sm: "none", md: "block" } }}
               direction={"row"}
               flexGrow={1}
             >
-              <Button onClick={() => router.push("/")}>হোম</Button>
               <Button onClick={() => router.push("/udichi")}>উদীচী</Button>
               <Button onClick={() => router.push("/organization")}>
                 সংগঠন
@@ -65,8 +68,8 @@ export default function Navbar() {
       </AppBar>
       {/* for mobile */}
       <Drawer open={open} onClose={() => setOpen(!open)}>
-        <Typography align="right">
-          <IconButton onClick={() => setOpen(false)}>
+        <Typography align="right" sx={{ p: "20px" }}>
+          <IconButton sx={{ color: "#EC1B24" }} onClick={() => setOpen(false)}>
             <Cancel />
           </IconButton>
         </Typography>
