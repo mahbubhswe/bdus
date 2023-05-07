@@ -40,7 +40,7 @@ export default function ReadFromFirebase({ category }) {
       <Stack
         spacing={5}
         direction={{ xs: "column", sm: "column", md: "row" }}
-        p={2}
+        p={1}
         justifyContent="center"
       >
         <Paper
