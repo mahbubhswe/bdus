@@ -16,11 +16,13 @@ import HomeIcon from "@mui/icons-material/Home";
 import Banner from "./Banner";
 import { useState } from "react";
 import { useRouter } from "next/router";
+import LatestNews from "./LatestNews";
 export default function Navbar() {
   const [open, setOpen] = useState(false);
   const router = useRouter();
   return (
     <React.Fragment>
+   <LatestNews/>
       <AppBar
         position="relative"
         sx={{
@@ -32,35 +34,55 @@ export default function Navbar() {
         className="dynamicAnimation"
       >
         <Banner />
-        <Paper elevation={10}>
+        <Paper elevation={10} sx={{ background: "#EC1B24" }}>
           <Toolbar>
             <IconButton onClick={() => router.push("/")}>
-              <HomeIcon sx={{ color: "#EC1B24" }} />
+              <HomeIcon sx={{ color: "#FFFFFF" }} />
             </IconButton>
             <Stack
               sx={{ display: { xs: "none", sm: "none", md: "block" } }}
               direction={"row"}
               flexGrow={1}
             >
-              <Button onClick={() => router.push("/udichi")}>উদীচী</Button>
-              <Button onClick={() => router.push("/organization")}>
+              <Button
+                sx={{ color: "#FFFFFF" }}
+                onClick={() => router.push("/udichi")}
+              >
+                উদীচী
+              </Button>
+              <Button
+                sx={{ color: "#FFFFFF" }}
+                onClick={() => router.push("/organization")}
+              >
                 সংগঠন
               </Button>
-              <Button onClick={() => router.push("/central-conferrance")}>
+              <Button
+                sx={{ color: "#FFFFFF" }}
+                onClick={() => router.push("/central-conferrance")}
+              >
                 জাতীয় সম্মেলন
               </Button>
-              <Button onClick={() => router.push("/branches")}>
+              <Button
+                sx={{ color: "#FFFFFF" }}
+                onClick={() => router.push("/branches")}
+              >
                 জেলা/শাখা
               </Button>
-              <Button onClick={() => router.push("/publications")}>
+              <Button
+                sx={{ color: "#FFFFFF" }}
+                onClick={() => router.push("/publications")}
+              >
                 প্রকাশনা
               </Button>
-              <Button onClick={() => router.push("/literature")}>
+              <Button
+                sx={{ color: "#FFFFFF" }}
+                onClick={() => router.push("/literature")}
+              >
                 সাহিত্য
               </Button>
             </Stack>
             <Typography flexGrow={1} />
-            <IconButton onClick={() => setOpen(true)}>
+            <IconButton sx={{ color: "#FFFFFF" }} onClick={() => setOpen(true)}>
               <MenuIcon />
             </IconButton>
           </Toolbar>

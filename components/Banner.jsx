@@ -17,7 +17,7 @@ function Banner() {
 
         <div style={{ display: "grid", placeContent: "center" }}>
           <Typography sx={{ color: "block" }}>
-            বাংলাদেশ উদীচী শিল্পীগোষ্ঠী ইউএসএ সংসদ
+            বাংলাদেশ উদীচী শিল্পীগোষ্ঠী যুক্তরাষ্ট্র সংসদ
           </Typography>
           <Typography sx={{ color: "block" }}>
             Bangladesh Udichi Shilpigoshthi USA Inc.

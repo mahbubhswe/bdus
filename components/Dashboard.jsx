@@ -128,6 +128,15 @@ export default function Index() {
             sx={{ minWidth: "150px", color: "white" }}
           >
             Create New Post
+          </Button>{" "}
+          <Button
+            onClick={() => router.push("/dashboard/setlatestNews")}
+            variant="contained"
+            size="small"
+            color="customColor"
+            sx={{ minWidth: "150px", color: "white" }}
+          >
+            Set Latest News
           </Button>
         </Stack>
         <Grid

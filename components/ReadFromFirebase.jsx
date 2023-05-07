@@ -47,7 +47,7 @@ export default function ReadFromFirebase({ category }) {
           sx={{
             width: { xs: "100%", sm: "70%", md: "70%" },
             borderRadius: "20px",
-            p: "10px",
+            p: "20px",
           }}
           elevation={3}
         >
@@ -68,6 +68,7 @@ export default function ReadFromFirebase({ category }) {
               </Box>
               <br />
               <ListItemText
+                sx={{ borderBottom: "3px dashed #EE1B24" }}
                 secondary={
                   <Typography
                     component="h1"
@@ -77,10 +78,9 @@ export default function ReadFromFirebase({ category }) {
                   </Typography>
                 }
                 primary={moment(posts[0].createdAt.toDate()).format(
-                  "MMMM Do YYYY, h:mm:ss a'"
+                  "MMMM Do YYYY, h:mm:ss a"
                 )}
               />
-              <Divider sx={{ my: "5px" }} />
 
               <div dangerouslySetInnerHTML={{ __html: posts[0].content }} />
             </React.Fragment>
@@ -98,10 +98,14 @@ export default function ReadFromFirebase({ category }) {
           }}
           elevation={3}
         >
-          <Typography fontSize={30} fontFamily={"sans-serif"} fontWeight={900}>
+          <Typography
+            sx={{ borderBottom: "3px dashed #EE1B24" }}
+            fontSize={30}
+            fontFamily={"sans-serif"}
+            fontWeight={900}
+          >
             Post List
           </Typography>
-          <Divider></Divider>
           <List dense>
             {posts.length > 0 ? (
               posts.map((post, index) => {
