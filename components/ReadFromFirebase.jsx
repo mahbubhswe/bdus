@@ -29,12 +29,9 @@ export default function ReadFromFirebase({ category }) {
   useEffect(() => {
     const collectionRef = collection(db, "posts");
     const q = postCategory
-      ? query(
-          collectionRef,
-          orderBy("createdAt", "desc"),
-          where("category", "==", `${postCategory}`)
-        )
+      ? query(collectionRef, where("category", "==", `${postCategory}`))
       : query(collectionRef);
+
     onSnapshot(q, (querySnapshot) => {
       let postsArray = [];
       querySnapshot.forEach((doc) => {
@@ -68,7 +65,7 @@ export default function ReadFromFirebase({ category }) {
                 }}
               >
                 <img
-                  src={posts[0].bannerImage}
+                  src={posts[posts.length - 1].bannerImage}
                   alt="Banner Image"
                   width={"100%"}
                   height={"100%"}
@@ -83,15 +80,19 @@ export default function ReadFromFirebase({ category }) {
                     component="h1"
                     sx={{ fontSize: "28px", fontWeight: "bold" }}
                   >
-                    {posts[0].title}
+                    {posts[posts.length - 1].title}
                   </Typography>
                 }
-                primary={moment(posts[0].createdAt.toDate()).format(
-                  "MMMM Do YYYY, h:mm:ss a"
-                )}
+                primary={moment(
+                  posts[posts.length - 1].createdAt.toDate()
+                ).format("MMMM Do YYYY, h:mm:ss a")}
               />
 
-              <div dangerouslySetInnerHTML={{ __html: posts[0].content }} />
+              <div
+                dangerouslySetInnerHTML={{
+                  __html: posts[posts.length - 1].content,
+                }}
+              />
             </React.Fragment>
           ) : (
             <PostLoader />
@@ -135,46 +136,6 @@ export default function ReadFromFirebase({ category }) {
           </List>
         </Paper>
       </Stack>
-      {/* <Grid
-        mt={1}
-        container
-        spacing={3}
-        justifyContent="center"
-        alignItems="center"
-      >
-        {posts.length > 0 ? (
-          posts.map((item, index) => (
-            <Grid item key={index}>
-              <Card sx={{ width: 300, height: 350 }}>
-                <CardActionArea
-                  onClick={() => router.push(`/read?id=${item.id}`)}
-                >
-                  <CardHeader
-                    avatar={<Avatar src="/logo.png" />}
-                    title={item.category}
-                    subheader={moment(item.createdAt.toDate()).format(
-                      "MMMM Do YYYY, h:mm:ss a'"
-                    )}
-                  />
-                  <CardMedia
-                    component="img"
-                    sx={{ height: 140 }}
-                    image={item.bannerImage}
-                    title={item.title}
-                  />
-                  <CardContent>
-                    <Typography gutterBottom variant="h5" component="div">
-                      {item.title}
-                    </Typography>
-                  </CardContent>
-                </CardActionArea>
-              </Card>
-            </Grid>
-          ))
-        ) : (
-          <Loading />
-        )}
-      </Grid> */}
     </React.Fragment>
   );
 }
