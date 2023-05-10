@@ -7,3 +7,7 @@ a {
 ::-webkit-scrollbar {
   width: 0px;
 }
+.fotterStyle {
+  margin-top: 200px;
+  background: linear-gradient(110deg, #fdcd3b 60%, #ffed4b 60%);
+}

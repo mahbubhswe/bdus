@@ -5,14 +5,19 @@ import {
   List,
   ListItemText,
   Typography,
-  Divider,
   ListItem,
   ListItemButton,
 } from "@mui/material";
 import ForwardIcon from "@mui/icons-material/Forward";
 import { useRouter } from "next/router";
 import React, { useEffect, useState } from "react";
-import { query, collection, onSnapshot, where } from "firebase/firestore";
+import {
+  query,
+  collection,
+  onSnapshot,
+  where,
+  orderBy,
+} from "firebase/firestore";
 import { db } from "../utils/firebase";
 import moment from "moment/moment";
 import PostLoader from "@/components/PostLoader";
@@ -24,7 +29,11 @@ export default function ReadFromFirebase({ category }) {
   useEffect(() => {
     const collectionRef = collection(db, "posts");
     const q = postCategory
-      ? query(collectionRef, where("category", "==", `${postCategory}`))
+      ? query(
+          collectionRef,
+          orderBy("createdAt", "desc"),
+          where("category", "==", `${postCategory}`)
+        )
       : query(collectionRef);
     onSnapshot(q, (querySnapshot) => {
       let postsArray = [];
@@ -47,7 +56,7 @@ export default function ReadFromFirebase({ category }) {
           sx={{
             width: { xs: "100%", sm: "70%", md: "70%" },
             borderRadius: "20px",
-            p: "20px",
+            p: { xs: "20px", sm: "30px", md: "50px" },
           }}
           elevation={3}
         >
@@ -93,7 +102,7 @@ export default function ReadFromFirebase({ category }) {
           sx={{
             width: { xs: "100%", sm: "30%", md: "30%" },
             borderRadius: "20px",
-            p: "10px",
+            p: { xs: "10px", sm: "20px", md: "30px" },
             borderTop: "5px solid #EE1B24",
           }}
           elevation={3}

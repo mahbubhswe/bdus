@@ -31,7 +31,6 @@ import { db } from "../utils/firebase";
 import moment from "moment/moment";
 import Swal from "sweetalert2";
 import Loading from "@/components/Loading";
-import Footer from "./Footer";
 export default function Index() {
   const router = useRouter();
   const [open, setOpen] = useState(false);
@@ -106,6 +105,7 @@ export default function Index() {
           <Autocomplete
             fullWidth
             options={[
+              "সাধারণ পোস্ট",
               "উদীচী",
               "সংগঠন",
               "জাতীয় সম্মেলন",
@@ -201,7 +201,7 @@ export default function Index() {
         <Backdrop open={open}>
           <CircularProgress color="secondary" />
         </Backdrop>
-        <Footer />
+      
       </Paper>
     </Container>
   );

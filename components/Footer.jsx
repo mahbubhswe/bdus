@@ -5,7 +5,7 @@ import FindOnSocilaMedia from "./FindOnSocilaMedia";
 import Image from "next/image";
 export default function Footer() {
   return (
-    <div style={{ marginTop: "100px", background: "#F3ECEA" }}>
+    <div className="fotterStyle">
       <Stack
         direction={{ xs: "column", sm: "row", md: "row" }}
         alignItems="center"
@@ -13,19 +13,18 @@ export default function Footer() {
         sx={{ p: "25px" }}
         justifyContent={"space-around"}
       >
-        <Typography sx={{ px: "10px" }}>
-          <Image
-            src="/poster500.gif"
-            height={250}
-            width={400}
-            quality={100}
-            alt="Poster"
-          />
-        </Typography>
-
         <div>
           <ContactUS />
           <FindOnSocilaMedia />
+        </div>
+        <div>
+          <Typography sx={{ color: "grey", fontWeight: "bold" }}>
+            পরিচালনায়ঃ
+          </Typography>
+          <Typography sx={{ px: "10px" }}>সভাপতি: সুব্রত বিশ্বাস</Typography>
+          <Typography sx={{ px: "10px" }}>
+            সাধারণ সম্পাদক: মোঃ আলীম উদ্দীন
+          </Typography>
         </div>
       </Stack>
       <Divider sx={{ width: "95%", margin: "auto", marginY: "50px" }}></Divider>

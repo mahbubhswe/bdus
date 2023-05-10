@@ -110,6 +110,7 @@ export default function CreateNewPost() {
         <Stack component="form" spacing={1} onSubmit={createPost}>
           <Autocomplete
             options={[
+              "সাধারণ পোস্ট",
               "উদীচী",
               "সংগঠন",
               "জাতীয় সম্মেলন",

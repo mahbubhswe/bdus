@@ -19,14 +19,14 @@ export default function ContactUS() {
         </IconButton>
         <IconButton
           sx={{ color: "#EC1B24" }}
-          href="mailto:udichi.bangladesh@gmail.com"
+          href="mailto:127uddin@gmail.com"
           component="a"
         >
           <EmailIcon />
         </IconButton>
         <IconButton
           sx={{ color: "#EC1B24" }}
-          href="https://goo.gl/maps/ZYSZkaBEB4soX3ha8"
+          href="https://goo.gl/maps/2fPWsoBT8qnzLhkR8"
           component="a"
         >
           <MapIcon />

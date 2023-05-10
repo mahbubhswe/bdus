@@ -4,7 +4,7 @@ import ReadFromFirebase from "@/components/ReadFromFirebase";
 export default function Index() {
   return (
     <Layout pageTitle={"Recent Post"}>
-      <ReadFromFirebase category={""} />
+      <ReadFromFirebase category={"সাধারণ পোস্ট"} />
     </Layout>
   );
 }
