@@ -2,7 +2,6 @@ import React from "react";
 import { Divider, Typography, Stack } from "@mui/material";
 import ContactUS from "./ContactUs";
 import FindOnSocilaMedia from "./FindOnSocilaMedia";
-import Image from "next/image";
 export default function Footer() {
   return (
     <div className="fotterStyle">
@@ -14,9 +13,9 @@ export default function Footer() {
         justifyContent={"space-around"}
       >
         <div>
-          <ContactUS />
-          <FindOnSocilaMedia />
+          <ContactUS /> <FindOnSocilaMedia />
         </div>
+
         <div>
           <Typography sx={{ color: "grey", fontWeight: "bold" }}>
             পরিচালনায়ঃ
@@ -27,6 +26,7 @@ export default function Footer() {
           </Typography>
         </div>
       </Stack>
+
       <Divider sx={{ width: "95%", margin: "auto", marginY: "50px" }}></Divider>
 
       <Typography sx={{ textAlign: "center", pb: "50px", px: "10px" }}>
