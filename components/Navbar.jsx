@@ -22,7 +22,7 @@ export default function Navbar() {
   const router = useRouter();
   return (
     <React.Fragment>
-   <LatestNews/>
+      <LatestNews />
       <AppBar
         position="relative"
         sx={{
@@ -70,15 +70,15 @@ export default function Navbar() {
               </Button>
               <Button
                 sx={{ color: "#FFFFFF" }}
-                onClick={() => router.push("/publications")}
+                onClick={() => router.push("/structure-resolution")}
               >
-                প্রকাশনা
+                গঠন ত্রান্ত
               </Button>
               <Button
                 sx={{ color: "#FFFFFF" }}
-                onClick={() => router.push("/literature")}
+                onClick={() => router.push("/next-day-program")}
               >
-                সাহিত্য
+                আগামী দিনের কর্মসূচি
               </Button>
             </Stack>
             <Typography flexGrow={1} />

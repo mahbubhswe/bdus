@@ -46,14 +46,20 @@ export default function Options() {
         </ListItemButton>
       </ListItem>
       <ListItem disablePadding>
-        <ListItemButton onClick={() => router.push("/publications")}>
-          <ListItemText primary="প্রকাশনা" secondary="প্রকাশনা। publications" />
+        <ListItemButton onClick={() => router.push("/structure-resolution")}>
+          <ListItemText
+            primary="গঠন ত্রান্ত"
+            secondary="গঠন ত্রান্ত। publications"
+          />
         </ListItemButton>
       </ListItem>
 
       <ListItem disablePadding>
-        <ListItemButton onClick={() => router.push("/literature")}>
-          <ListItemText primary="সাহিত্য" secondary="সাহিত্য" />
+        <ListItemButton onClick={() => router.push("/next-day-program")}>
+          <ListItemText
+            primary="আগামী দিনের কর্মসূচি"
+            secondary="আগামী দিনের কর্মসূচি"
+          />
         </ListItemButton>
       </ListItem>
     </List>

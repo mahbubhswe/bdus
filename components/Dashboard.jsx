@@ -110,8 +110,8 @@ export default function Index() {
               "সংগঠন",
               "জাতীয় সম্মেলন",
               "জেলা/শাখা",
-              "প্রকাশনা",
-              "সাহিত্য",
+              "আগামী দিনের কর্মসূচি",
+              "গঠন ত্রান্ত",
             ].map((option) => option)}
             onChange={(event, newValue) => {
               setCategory(newValue);
@@ -201,7 +201,6 @@ export default function Index() {
         <Backdrop open={open}>
           <CircularProgress color="secondary" />
         </Backdrop>
-      
       </Paper>
     </Container>
   );

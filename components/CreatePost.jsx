@@ -115,8 +115,8 @@ export default function CreateNewPost() {
               "সংগঠন",
               "জাতীয় সম্মেলন",
               "জেলা/শাখা",
-              "প্রকাশনা",
-              "সাহিত্য",
+              "আগামী দিনের কর্মসূচি",
+              "গঠন ত্রান্ত",
             ].map((option) => option)}
             onChange={(event, newValue) => {
               setCategory(newValue);
