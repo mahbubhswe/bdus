@@ -134,6 +134,22 @@ export default function ReadFromFirebase({ category }) {
               <ListLoader />
             )}
           </List>
+          <br /> 
+          <iframe
+            src="https://www.youtube.com/embed/GIRifB8C1QI"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>{" "}
+          <br /> <br />
+          <iframe
+            src="https://www.youtube.com/embed/8oZNqe5JvJo"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
         </Paper>
       </Stack>
     </React.Fragment>
