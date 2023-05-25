@@ -3,6 +3,7 @@ import React from "react";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
 import { useRouter } from "next/router";
+import ViewGallery from "./ViewGallery";
 export default function Layout({ pageTitle, children }) {
   const router = useRouter();
   return (
@@ -16,6 +17,7 @@ export default function Layout({ pageTitle, children }) {
       </Head>
       <Navbar />
       <main> {children}</main>
+      <ViewGallery />
       <Footer />
     </React.Fragment>
   );

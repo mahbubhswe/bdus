@@ -138,6 +138,15 @@ export default function Index() {
           >
             Set Latest News
           </Button>
+          <Button
+            onClick={() => router.push("/dashboard/add-photo-to-gallery")}
+            variant="contained"
+            size="small"
+            color="customColor"
+            sx={{ minWidth: "150px", color: "white" }}
+          >
+            Add to Gallery
+          </Button>
         </Stack>
         <Grid
           mt={1}
