@@ -21,14 +21,19 @@ export default function ViewGallery() {
   return (
     <>
       <br></br> <br></br>
-      <h1 style={{ textAlign: "center"}}>
+      <h1
+        style={{
+          textAlign: "center",
+        }}
+      >
         ফোটো গেলারি
-      </h1>{" "}
+      </h1>
       <br></br>
       <Marquee>
         {photo.length > 0
           ? photo.map((item, index) => (
               <Image
+                key={index}
                 src={item.photo}
                 height={300}
                 width={300}
