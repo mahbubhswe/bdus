@@ -108,6 +108,10 @@ export default function ReadFromFirebase({ category }) {
           }}
           elevation={3}
         >
+          <p>
+            এ যুগের চারণ মোরা, মানুষের গান শুনিয়ে যাই যেখানে মতের বিভেদ, মিলনেরই
+            মন্ত্র শোনাই…
+          </p>
           <Typography
             sx={{ borderBottom: "3px dashed #EE1B24" }}
             fontSize={30}
@@ -134,7 +138,7 @@ export default function ReadFromFirebase({ category }) {
               <ListLoader />
             )}
           </List>
-          <br /> 
+          <br />
           <iframe
             src="https://www.youtube.com/embed/GIRifB8C1QI"
             title="YouTube video player"

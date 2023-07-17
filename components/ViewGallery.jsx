@@ -26,7 +26,7 @@ export default function ViewGallery() {
           textAlign: "center",
         }}
       >
-        ফোটো গেলারি
+        ফটো গ্যালারি
       </h1>
       <br></br>
       <Marquee>

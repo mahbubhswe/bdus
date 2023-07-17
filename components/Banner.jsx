@@ -5,22 +5,15 @@ import React from "react";
 function Banner() {
   return (
     <Box sx={{ background: "white", p: "20px" }}>
-      <Stack
-        direction={{ xs: "column", sm: "row", md: "row" }}
-        justifyContent={{
-          xs: "center",
-          sm: "space-between",
-          md: "space-between",
-        }}
-      >
-        <Image src="/logo.png" height={80} width={60} quality={100} />
+      <Stack direction="row" justifyContent="start" spacing={1}>
+        <Image src="/logo.png" height={70} width={50} quality={100} />
 
         <div style={{ display: "grid", placeContent: "center" }}>
           <Typography sx={{ color: "block" }}>
-            যুক্তরাষ্ট্র উদীচী শিল্পীগোষ্ঠী
+            বাংলাদেশ উদীচী শিল্পীগোষ্ঠী, যুক্তরাষ্ট্র সংসদ
           </Typography>
           <Typography sx={{ color: "block" }}>
-            USA Udichi Shilpigoshthi
+            Udichi Shilpigoshthi, USA
           </Typography>
         </div>
       </Stack>

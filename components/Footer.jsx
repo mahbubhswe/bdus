@@ -17,9 +17,6 @@ export default function Footer() {
         </div>
 
         <div>
-          <Typography sx={{ color: "grey", fontWeight: "bold" }}>
-            পরিচালনায়ঃ
-          </Typography>
           <Typography sx={{ px: "10px" }}>সভাপতি: সুব্রত বিশ্বাস</Typography>
           <Typography sx={{ px: "10px" }}>
             সাধারণ সম্পাদক: মোঃ আলীম উদ্দীন
