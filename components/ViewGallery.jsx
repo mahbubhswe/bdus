@@ -25,10 +25,7 @@ export default function ViewGallery() {
         style={{
           textAlign: "center",
         }}
-      >
-        {" "}
-        ফটো গ্যালারি{" "}
-      </h1>
+      ></h1>
       <br></br>
       <Marquee>
         {photo.length > 0
