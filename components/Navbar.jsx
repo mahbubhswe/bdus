@@ -48,19 +48,19 @@ export default function Navbar() {
                 sx={{ color: "#FFFFFF" }}
                 onClick={() => router.push("/udichi")}
               >
-                উদীচী
+                {/* উদীচী */}
               </Button>
               <Button
                 sx={{ color: "#FFFFFF" }}
                 onClick={() => router.push("/organization")}
               >
-                সংগঠন
+                {/* সংগঠন */}
               </Button>
               <Button
                 sx={{ color: "#FFFFFF" }}
                 onClick={() => router.push("/central-conferrance")}
               >
-                জাতীয় সম্মেলন
+                {/* জাতীয় সম্মেলন */}
               </Button>
               <Button
                 sx={{ color: "#FFFFFF" }}
@@ -71,12 +71,14 @@ export default function Navbar() {
               <Button
                 sx={{ color: "#FFFFFF" }}
                 onClick={() => router.push("/structure-resolution")}
-              ></Button>
+              >
+                গঠন তন্ত্র
+              </Button>
               <Button
                 sx={{ color: "#FFFFFF" }}
                 onClick={() => router.push("/next-day-program")}
               >
-                আগামী দিনের কর্মসূচি
+                {/* আগামী দিনের কর্মসূচি */}
               </Button>
             </Stack>
             <Typography flexGrow={1} />
