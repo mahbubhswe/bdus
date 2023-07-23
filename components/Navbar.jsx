@@ -71,9 +71,7 @@ export default function Navbar() {
               <Button
                 sx={{ color: "#FFFFFF" }}
                 onClick={() => router.push("/structure-resolution")}
-              >
-                গঠন ত্রান্ত
-              </Button>
+              ></Button>
               <Button
                 sx={{ color: "#FFFFFF" }}
                 onClick={() => router.push("/next-day-program")}
