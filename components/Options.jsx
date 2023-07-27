@@ -48,8 +48,8 @@ export default function Options() {
       <ListItem disablePadding>
         <ListItemButton onClick={() => router.push("/structure-resolution")}>
           <ListItemText
-            primary="গঠন ত্রান্ত"
-            secondary="গঠন ত্রান্ত। publications"
+            primary="গঠনতন্ত্র"
+            secondary="গঠননত্র। publications"
           />
         </ListItemButton>
       </ListItem>

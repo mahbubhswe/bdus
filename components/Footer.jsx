@@ -28,7 +28,7 @@ export default function Footer() {
 
       <Typography sx={{ textAlign: "center", pb: "50px", px: "10px" }}>
         Copyright © {new Date().getFullYear()} Bangladesh Udichi Shilpigosthi
-        USA Inc. All Rights Reserved.
+        USA. All Rights Reserved.
       </Typography>
     </div>
   );

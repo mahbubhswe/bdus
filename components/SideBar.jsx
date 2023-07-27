@@ -2,7 +2,6 @@ import React from "react";
 import { Divider, Button } from "@mui/material";
 import Options from "./Options";
 import AdjustIcon from "@mui/icons-material/Adjust";
-import Logo from "./Banner";
 import Story from "./Story";
 import Poster from "./Poster";
 import ContactUs from "./ContactUs";

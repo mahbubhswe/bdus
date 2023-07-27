@@ -24,8 +24,8 @@ export default function ContactUS() {
               <CallIcon />
             </ListItemIcon>
             <ListItemText
-              primary="Call"
-              secondary=" +88029582054"
+              primary="Tel"
+              secondary="1646-642-4708"
             ></ListItemText>
           </ListItemButton>
         </ListItem>
@@ -36,7 +36,7 @@ export default function ContactUS() {
             </ListItemIcon>
             <ListItemText
               primary="E-mail"
-              secondary=" 127uddin@gmail.com"
+              secondary=" udichiusa@gmail.com"
             ></ListItemText>
           </ListItemButton>
         </ListItem>
