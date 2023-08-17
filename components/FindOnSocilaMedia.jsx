@@ -11,7 +11,7 @@ export default function FindOnSocilaMedia() {
       <Stack direction={"row"}>
         <IconButton
           sx={{ color: "#EC1B24" }}
-          href="https://www.facebook.com/profile.php?id=100069755868815"
+          href="https://web.facebook.com/profile.php?id=100093416082984"
           component="a"
         >
           <Facebook />
